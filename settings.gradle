@@ -1,0 +1,4 @@
+include ':app',
+        ':uploadfile-utils'
+
+project(":uploadfile-utils").projectDir = new File(rootDir,"features/uploadfile")

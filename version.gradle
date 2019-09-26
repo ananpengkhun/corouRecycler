@@ -1,0 +1,6 @@
+ext.deps = [:]
+
+def core = [:]
+core.appcompat = 'androidx.appcompat:appcompat:1.1.0'
+
+deps.core = core
