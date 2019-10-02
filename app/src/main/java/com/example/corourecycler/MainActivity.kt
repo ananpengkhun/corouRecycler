@@ -22,24 +22,15 @@ class MainActivity : AppCompatActivity() {
         model.firstTodo.observe(this, Observer {resource ->
             when(resource.status){
                 Status.SUCCESS -> {
-                    println("all list : ${resource.data?.size}")
-                    tv_success.isVisible = true
-                    tv_success.text = "Success"
-                    pregres.isVisible = false
-                    tv_error.isVisible = false
+
                 }
 
                 Status.LOADING -> {
-                    tv_success.isVisible = false
-                    pregres.isVisible = true
-                    tv_error.isVisible = false
+
                 }
 
                 Status.ERROR -> {
-                    tv_success.isVisible = false
-                    pregres.isVisible = false
-                    tv_error.isVisible = true
-                    tv_error.text = resource.msg
+
                 }
             }
         })

@@ -16,3 +16,7 @@ data class Resource< T>(val status: Status, val data: T?, val msg: String?) {
     }
 
 }
+
+class doSomeThings(){
+
+}
