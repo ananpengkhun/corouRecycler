@@ -26,7 +26,12 @@ class MainViewModel : ViewModel() {
         _todos.value = true
     }
 
+    fun featureTwo(){
+
+    }
+
     fun featrue3(){
 
     }
+
 }
