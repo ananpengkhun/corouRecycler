@@ -26,5 +26,8 @@ class MainViewModel : ViewModel() {
         _todos.value = true
     }
 
+    fun feature4(){
+
+    }
 
 }
